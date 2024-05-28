@@ -1,0 +1,13 @@
+.headshot {
+    border-radius:50%;
+    overflow:hidden;
+    height:200px;
+    width: 200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.headshot > img {
+    width:200px;
+    position: relative;
+    top:-50px;
+}
