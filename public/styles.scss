@@ -73,6 +73,19 @@ header {
     padding-bottom:3rem;
 }
 
+.menu {
+    min-height:100px;
+    & .menu__links {
+        display:none;
+    }
+
+    & .menu__hamburger {
+        float:right;
+        margin-top:20px;
+        margin-right:20px;
+    }
+}
+
 main {
     background-color: $section-alternate-background;
     margin: 0;

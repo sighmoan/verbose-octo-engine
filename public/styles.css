@@ -63,6 +63,18 @@ header button {
   font-size: 24px;
 }
 
+.menu {
+  min-height: 100px;
+}
+.menu .menu__links {
+  display: none;
+}
+.menu .menu__hamburger {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
 main {
   background-color: #EDF7FA;
   margin: 0;
