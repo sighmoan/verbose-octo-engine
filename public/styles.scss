@@ -89,12 +89,14 @@ main > section {
 main {
     background-color: $section-alternate-background;
     margin: 0;
-    padding: 0;
+    padding-left:5px;
+    padding-right:5px;
 
     & h3 {
         font-weight: 100;
         text-align: center;
-        margin-top: 0;
+        margin-bottom: 2rem;
+        padding-top:2rem;
     }
 
     & article {

@@ -76,12 +76,14 @@ main > section:nth-child(2) {
 main {
   background-color: #EDF7FA;
   margin: 0;
-  padding: 0;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 main h3 {
   font-weight: 100;
   text-align: center;
-  margin-top: 0;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
 }
 main article {
   background-color: white;
