@@ -1,4 +1,10 @@
 $primary-color: #FF6464;
+$section-alternate-background: #EDF7FA;
+
+body {
+    padding: 0;
+    margin: 0;
+}
 
 
 .headshot {
@@ -21,7 +27,6 @@ h1, h2, h3, p {
 }
 
 section {
-    width:100%;
 }
 
 header h1 {
@@ -54,3 +59,35 @@ header button {
     font-size: 24px;
     
 }
+
+main {
+    background-color: $section-alternate-background;
+    margin: 0;
+    padding-left:.5rem;
+    padding-right:.5rem;
+}
+
+main h3 {
+    font-weight: 100;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+main article {
+    background-color: white;
+    border-radius: 0.3rem;
+    padding-left:1rem;
+    padding-top: 1rem;
+    padding-bottom: .4rem;
+    margin-bottom:1rem;
+}
+
+main article h2 {
+    margin-top: 0;
+}
+
+.byline span:nth-child(2) {
+    margin-left: 15px;
+    border-left: 1px solid black;
+    padding-left: 15px;
+}   
