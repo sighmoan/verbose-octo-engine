@@ -77,38 +77,40 @@ main {
     background-color: $section-alternate-background;
     margin: 0;
     padding: 0;
-}
 
-main h3 {
-    font-weight: 100;
-    text-align: center;
-    margin-top: 0;
-}
-
-main article {
-    background-color: white;
-    border-radius: 0.3rem;
-    padding-left:1rem;
-    padding-top: 1rem;
-    padding-bottom: .4rem;
-    margin-bottom:1rem;
-
-    & h2 {
+    & h3 {
+        font-weight: 100;
+        text-align: center;
         margin-top: 0;
-        font-size: 22px;
     }
 
-    & p {
-        font-size: 16px;
-        line-height:23.5px;
+    & article {
+        background-color: white;
+        border-radius: 0.3rem;
+        padding-left:1rem;
+        padding-top: 1rem;
+        padding-bottom: .4rem;
+        margin-bottom:1rem;
+    
+        & h2 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+    
+        & p {
+            font-size: 16px;
+            line-height:23.5px;
+        }
+    }
+
+    & .byline span:nth-child(2) {
+        margin-left: 15px;
+        border-left: 1px solid black;
+        padding-left: 15px;
     }
 }
 
-.byline span:nth-child(2) {
-    margin-left: 15px;
-    border-left: 1px solid black;
-    padding-left: 15px;
-}
+
 
 .screenshot {
     width: 100%;
