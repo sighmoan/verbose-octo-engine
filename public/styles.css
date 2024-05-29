@@ -3,21 +3,6 @@ body {
   margin: 0;
 }
 
-.headshot {
-  border-radius: 50%;
-  overflow: hidden;
-  height: 200px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.headshot > img {
-  width: 200px;
-  position: relative;
-  top: -50px;
-}
-
 h1, h2, h3, p {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -32,23 +17,48 @@ main > section:nth-child(2) {
   background-color: #fff;
 }
 
-header {
+.menu {
+  min-height: 100px;
+}
+.menu .menu__links {
+  display: none;
+}
+.menu .menu__hamburger {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.hero {
   padding-bottom: 3rem;
 }
-header h1 {
+.hero .hero__headshot {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero .hero__headshot > img {
+  width: 200px;
+  position: relative;
+  top: -50px;
+}
+.hero .hero__heading {
   font-size: 42px;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
 }
-header p {
+.hero .hero__paragraph {
   font-size: 20px;
   line-height: 1.5;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
 }
-header button {
+.hero .hero__button {
   color: white;
   display: block;
   background-color: #FF6464;
@@ -61,18 +71,6 @@ header button {
   height: 5rem;
   width: 15rem;
   font-size: 24px;
-}
-
-.menu {
-  min-height: 100px;
-}
-.menu .menu__links {
-  display: none;
-}
-.menu .menu__hamburger {
-  float: right;
-  margin-top: 20px;
-  margin-right: 20px;
 }
 
 main {

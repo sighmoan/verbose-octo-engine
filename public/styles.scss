@@ -6,22 +6,6 @@ body {
     margin: 0;
 }
 
-
-.headshot {
-    border-radius:50%;
-    overflow:hidden;
-    height:200px;
-    width: 200px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.headshot > img {
-    width:200px;
-    position: relative;
-    top:-50px;
-}
-
 h1, h2, h3, p {
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -38,15 +22,44 @@ main > section {
 
 }
 
-header {
-    & h1 {
+.menu {
+    min-height:100px;
+    & .menu__links {
+        display:none;
+    }
+
+    & .menu__hamburger {
+        float:right;
+        margin-top:20px;
+        margin-right:20px;
+    }
+}
+
+.hero {
+
+    & .hero__headshot {
+        border-radius:50%;
+        overflow:hidden;
+        height:200px;
+        width: 200px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    & .hero__headshot > img {
+        width:200px;
+        position: relative;
+        top:-50px;
+    }
+
+    & .hero__heading {
         font-size: 42px;
         margin-left: 10%;
         margin-right: 10%;
         text-align: center;
     }
 
-    & p {
+    & .hero__paragraph {
         font-size: 20px;
         line-height: 1.5;
         margin-left: 10%;
@@ -54,7 +67,7 @@ header {
         text-align: center;
     }
 
-    & button {
+    & .hero__button {
         color: white;
         display: block;
         background-color: $primary-color;
@@ -71,19 +84,6 @@ header {
     }
 
     padding-bottom:3rem;
-}
-
-.menu {
-    min-height:100px;
-    & .menu__links {
-        display:none;
-    }
-
-    & .menu__hamburger {
-        float:right;
-        margin-top:20px;
-        margin-right:20px;
-    }
 }
 
 main {
