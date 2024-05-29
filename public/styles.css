@@ -19,6 +19,9 @@
   .hero__button {
     margin-left: 0;
   }
+  .menu__hamburger {
+    display: none;
+  }
 }
 @media (width < 1000px) {
   .hero__heading, .hero__paragraph {
@@ -29,6 +32,9 @@
   .hero__button {
     margin-left: auto;
     margin-right: auto;
+  }
+  .menu__links {
+    display: none;
   }
 }
 body {
@@ -61,9 +67,6 @@ main.alternate-background {
 
 .menu {
   min-height: 100px;
-}
-.menu .menu__links {
-  display: none;
 }
 .menu .menu__hamburger {
   float: right;

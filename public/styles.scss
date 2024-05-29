@@ -29,6 +29,10 @@ $section-alternate-background: #EDF7FA;
     .hero__button {
         margin-left: 0;
     }
+
+    .menu__hamburger {
+        display: none;
+    }
 }
 
 @media (width < 1000px) {
@@ -41,6 +45,10 @@ $section-alternate-background: #EDF7FA;
     .hero__button {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .menu__links {
+        display:none;
     }
 }   
 
@@ -76,9 +84,6 @@ main.alternate-background {
 
 .menu {
     min-height:100px;
-    & .menu__links {
-        display:none;
-    }
 
     & .menu__hamburger {
         float:right;
