@@ -5,7 +5,44 @@ $section-alternate-background: #EDF7FA;
     .posts__intro-heading {
         text-align: left;
     }
+
+    .hero {
+        & .hero__heading {
+            text-align: left;
+            max-width:500px;
+        }
+    }
+
+    .hero__heading--shortline::before {
+        content: "\a";
+    }
+
+    .hero__headshot {
+        float: right;
+    }
+
+    .hero__heading, .hero__paragraph {
+        width: 500px;
+        margin-left: 0;
+    }
+
+    .hero__button {
+        margin-left: 0;
+    }
 }
+
+@media (width < 1000px) {
+    .hero__heading, .hero__paragraph {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .hero__button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}   
 
 body {
     padding: 0;
@@ -68,18 +105,13 @@ main.alternate-background {
     }
 
     & .hero__heading {
-        font-size: 42px;
-        margin-left: 10%;
-        margin-right: 10%;
-        text-align: center;
+        font-size: 44px;
+        
     }
 
     & .hero__paragraph {
         font-size: 20px;
         line-height: 1.5;
-        margin-left: 10%;
-        margin-right: 10%;
-        text-align: center;
     }
 
     & .hero__button {
@@ -90,8 +122,6 @@ main.alternate-background {
         border-radius: 3px;
         box-shadow: 0;
         border: 0;
-        margin-left: auto;
-        margin-right: auto;
         height:5rem;
         width: 15rem;
         font-size: 24px;
