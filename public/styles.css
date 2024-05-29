@@ -127,6 +127,31 @@ main article p {
   border-bottom: 1px solid #E0E0E0;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 200px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.socials > li:nth-child(1) {
+  content: url("/assets/fb.png");
+}
+
+.socials > li:nth-child(2) {
+  content: url("/assets/insta.png");
+}
+
+.socials > li:nth-child(3) {
+  content: url("/assets/twitter-icon.png");
+}
+
+.socials > li:nth-child(4) {
+  content: url("/assets/linkedin-icon.png");
 }
 
 /*# sourceMappingURL=styles.css.map */
