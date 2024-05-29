@@ -1,6 +1,12 @@
 $primary-color: #FF6464;
 $section-alternate-background: #EDF7FA;
 
+@media (width >= 1000px) {
+    .posts__intro-heading {
+        text-align: left;
+    }
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -14,12 +20,21 @@ main > section {
     padding-left:.5rem;
     padding-right:.5rem;
     padding-top:1rem;
-    background-color: $section-alternate-background;
 
     &:nth-child(2) {
         background-color: #fff;
     }
 
+}
+
+main.alternate-background {
+    background-color: $section-alternate-background;
+}
+
+.menu, .hero, .posts, .featured-section, .socials {
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .menu {
@@ -87,16 +102,21 @@ main > section {
 }
 
 main {
-    background-color: $section-alternate-background;
     margin: 0;
     padding-left:5px;
     padding-right:5px;
+
 
     & h3 {
         font-weight: 100;
         text-align: center;
         margin-bottom: 2rem;
         padding-top:2rem;
+    }
+
+
+    & .posts__section {
+        display:flex;
     }
 
     & article {
@@ -106,6 +126,8 @@ main {
         padding-top: 1rem;
         padding-bottom: .4rem;
         margin-bottom:1rem;
+        margin-right:1rem;
+        min-width: 350px;
     
         & h2 {
             margin-top: 0;
