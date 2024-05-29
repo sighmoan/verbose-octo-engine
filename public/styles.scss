@@ -143,6 +143,11 @@ main article {
     margin-bottom:200px;
 }
 
+footer {
+    padding-top:40px;
+    padding-bottom:100px;
+}
+
 .socials {
     display:flex;
     justify-content: space-evenly;
@@ -165,4 +170,10 @@ main article {
 
 .socials > li:nth-child(4) {
     content:url("/assets/linkedin-icon.png")
+}
+
+.copyright {
+    text-align:center;
+    color: #21243D;
+    font-size:14px;
 }
