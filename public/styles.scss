@@ -1,5 +1,6 @@
 $primary-color: #FF6464;
 $section-alternate-background: #EDF7FA;
+$text-color: #21243D;
 
 @media (width >= 1000px) {
     .posts__intro-heading {
@@ -47,6 +48,10 @@ $section-alternate-background: #EDF7FA;
         margin-right:auto;
     }
 
+    .featured h3 {
+        text-align:left;
+    }
+
 }
 
 @media (width < 1000px) {
@@ -80,6 +85,10 @@ $section-alternate-background: #EDF7FA;
 
 }   
 
+/**
+    universal styles
+*/
+
 body {
     padding: 0;
     margin: 0;
@@ -87,6 +96,7 @@ body {
 
 h1, h2, h3, p {
     font-family:Arial, Helvetica, sans-serif;
+    color: $text-color;
 }
 
 main > section {
