@@ -41,6 +41,12 @@ $section-alternate-background: #EDF7FA;
         margin-right: 25px;
     }
 
+    .menu, .hero, .posts, .featured-section, .socials {
+        max-width:1000px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
 }
 
 @media (width < 1000px) {
@@ -62,6 +68,16 @@ $section-alternate-background: #EDF7FA;
     .featured {
         width:344px;
     }
+
+    .socials {
+        margin-left:10px;
+        margin-right:10px;
+    }
+
+    .menu, .hero, .posts, .featured-section, .socials {
+        max-width:100%;
+    }
+
 }   
 
 body {
@@ -86,12 +102,6 @@ main > section {
 
 main.alternate-background {
     background-color: $section-alternate-background;
-}
-
-.menu, .hero, .posts, .featured-section, .socials {
-    max-width:1000px;
-    margin-left:auto;
-    margin-right:auto;
 }
 
 .menu {
@@ -164,6 +174,11 @@ main {
 
     & .posts__section {
         display:flex;
+        flex-wrap:wrap;
+
+        & article {
+            max-width: 450px;
+        }
     }
 
     & article {
@@ -241,8 +256,6 @@ footer {
     display:flex;
     justify-content: space-evenly;
     padding-left:0;
-    margin-left:10px;
-    margin-right:10px;
 }
 
 /** Here be dragons **/
