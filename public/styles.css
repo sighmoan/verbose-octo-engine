@@ -205,6 +205,7 @@ footer {
   margin-right: 10px;
 }
 
+/** Here be dragons **/
 .socials > li:nth-child(1) {
   content: url("/assets/fb.png");
 }
